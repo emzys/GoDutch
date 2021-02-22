@@ -17,5 +17,69 @@ body {
   width: 600px;
   background-color: #fff;
   box-shadow: 0 0 10px #000;
+  border-radius: 5px;
 }
 
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  color: #fff;
+  background-color: rgb(88, 0, 230);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.top p {
+  margin-top: 10px;
+}
+
+.bottom {
+  padding: 40px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+input, select {
+  margin-bottom: 25px;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 185, 185)
+}
+
+.count {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 20px 10px;
+  width: 60%;
+  font-size: 22px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(88, 0, 230);
+  border: none;
+  box-shadow: 2px 2px 5px rgb(150, 150, 150);
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.count:hover {
+  background-color: rgb(62, 1, 160);
+}
+
+.cost-info {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.error {
+  font-size: 17px;
+  color: rgb(199,63,29);
+  text-align: center;
+}
