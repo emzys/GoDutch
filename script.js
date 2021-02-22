@@ -5,10 +5,7 @@ const btn = document.querySelector('.count');
 const errorMsg = document.querySelector('.error');
 const costInfo = document.querySelector('.cost-info');
 
-
 const isFilledOut = () => {
-
-  let finalCost;
   if (price.value == "" || people.value == "" || tip.value == 0) {
     errorMsg.innerText = "Please provide missing information.";
   } else {
@@ -26,6 +23,5 @@ const countCost = () => {
   const finalCost = (newPrice + (newPrice * newTip)) / peopleCount;
   costInfo.innerText = `The cost per person is ${finalCost.toFixed(2)}!`
 };
-
 
 btn.addEventListener('click', isFilledOut);
